@@ -1,6 +1,20 @@
-<%- include("partials/header") -%>
-
-<h1>Contact Us</h1>
-<p><%= StartingContent %></p>
-
-<%- include("partials/footer") -%>
+<%- include("partials/header"); -%>
+    <h1 class="heading">Contact</h1>
+    <form action="mailto:architsinha15700@gmail.com" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <input type="submit" class="btn" value="Send">
+        <input type="reset" class="btn" value="Reset">
+      </form>
+<%- include("partials/footer"); -%>
